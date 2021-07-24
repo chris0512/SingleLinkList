@@ -1,0 +1,27 @@
+public class Main {
+
+    public static void main(String[] args) {
+	    Employee janesJhones = new Employee("Jane","Jhones", 123);
+	    Employee jhonDoe = new Employee("Jhon", "Doe",4567);
+	    Employee marySmith = new Employee("Mary","Smith",22);
+	    Employee mikeWilson = new Employee("Mike","Wilson",2345);
+
+	    EmployeeLinkedList list = new EmployeeLinkedList();
+
+		System.out.println(list.isEmpty());
+
+	    list.addToFront(janesJhones);
+	    list.addToFront(jhonDoe);
+	    list.addToFront(marySmith);
+	    list.addToFront(mikeWilson);
+
+		System.out.println(list.getSize());
+
+	    list.printList();
+
+	    list.removeFromFront();
+		System.out.println(list.getSize());
+		list.printList();
+
+    }
+}
